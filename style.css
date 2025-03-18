@@ -100,6 +100,7 @@
     flex-wrap: wrap;
     align-items: stretch; /* Ensures both divs match height */
     row-gap: 30px;
+    padding: 20px;
 }
 
 .container-myname {
@@ -170,10 +171,77 @@ a:link {
     color: rgb(255, 255, 255);
   }
 
-  .break {
+.break {
     border-style: solid;
     border-width: 2px 0px 0px 0px;
     border-color: rgb(72, 72, 72);
     margin-bottom: 15px;
   }
-  
+
+.software-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.software-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me {
+    word-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word; /* Alternative for breaking long words */
+    white-space: normal; /* Allows text to wrap */
+    max-width: 100%; /* Prevents overflow */
+}
+
+.row {
+    flex-wrap: wrap; /* Ensures columns wrap properly on smaller screens */
+}
+
+h2, h6, p {
+    overflow: hidden; /* Prevents text from overflowing */
+    text-overflow: ellipsis; /* Trims overflow text with "..." (optional) */
+    white-space: normal; /* Ensures text wraps within div */
+}
+
+.software-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to move to the next row */
+    justify-content: center; /* Centers items when they wrap */
+    gap: 15px; /* Adds spacing between images */
+}
+
+.software-img {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    flex: 1 1 auto; /* Ensures images shrink and wrap when needed */
+    max-width: 90px; /* Keeps images from growing too large */
+}
+
+.software-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button1 a {
+    background-color: rgb(10, 51, 22);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .button2 a {
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: white;
+  }
