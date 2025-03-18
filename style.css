@@ -216,11 +216,11 @@ h2, h6, p {
 }
 
 .software-img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     overflow: hidden;
     flex: 1 1 auto; /* Ensures images shrink and wrap when needed */
-    max-width: 80px; /* Keeps images from growing too large */
+    max-width: 90px; /* Keeps images from growing too large */
 }
 
 .software-img img {
@@ -270,7 +270,7 @@ h2, h6, p {
 }
 
 .card {
-    border: 2px solid black !important;
+    border: 2px solid rgb(72, 72, 72) !important;
     border-radius: 15px !important;
   }
 
@@ -278,3 +278,8 @@ h2, h6, p {
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
   }
+
+.nav.border-bottom {
+    border-color: rgb(72, 72, 72); 
+    border-width: 2px;  /* Adjust thickness */
+}
