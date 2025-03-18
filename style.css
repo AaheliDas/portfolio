@@ -95,8 +95,15 @@
     display: inline;
 }
 
+.sec2-main-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensures both divs match height */
+    row-gap: 30px;
+}
+
 .container-myname {
-    height: 700px;
+    height: 500px;
     background-image: url(images/me.jpg);
     background-size: cover;
     background-position: center;
@@ -104,6 +111,7 @@
     text-align: right;
     border-radius: 15px;
     padding: 20px;
+    min-height: 100%;
 }
 
 .container-myname img{
@@ -156,3 +164,16 @@
 .row.contact {
     gap: 15px; /* Adds spacing between columns */
 }
+
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .break {
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: rgb(72, 72, 72);
+    margin-bottom: 15px;
+  }
+  
